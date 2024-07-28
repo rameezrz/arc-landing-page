@@ -1,0 +1,19 @@
+.item-1 {
+  background-image: url("../../assets/hero1.png");
+}
+.item-2 {
+  background-image: url("../../assets/hero3.png");
+}
+.item-3 {
+  background-image: url("../../assets/hero2.png");
+}
+.item-5 {
+  background-image: url("../../assets/hero4.png");
+}
+
+@supports (-webkit-text-stroke: 1px black) {
+  .sale {
+    -webkit-text-stroke: 1px black;
+    -webkit-text-fill-color: white;
+  }
+}
