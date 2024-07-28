@@ -6,7 +6,7 @@ import "./productList.css";
 const ProductsList = () => {
   return (
     <section className="productList mb-12">
-      <h1 className="font-theme text-center text-2xl md:text-5xl mb-8">
+      <h1 className="font-theme text-center text-2xl md:text-5xl mb-8 text-primary-gray">
         New Arrivals
       </h1>
       <div className="grid gap-y-6 grid-cols-4 lg:grid-cols-8 lg:gap-y-0">

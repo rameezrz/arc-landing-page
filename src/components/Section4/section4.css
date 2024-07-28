@@ -1,0 +1,27 @@
+.section4 .carousel-item {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+  width: 372px;
+  height: 486px;
+  /* background-color: #fff; */
+  overflow: hidden;
+}
+
+.section4 .slick-slide:not(.slick-center) .carousel-item {
+  transform: scale(0.8);
+  /* border: 2px solid rgb(101, 101, 101); */
+}
+
+.section4 .slick-center .carousel-item {
+  transform: scale(1);
+  /* border: 2px solid black; */
+}
+
+.section4 .carousel-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  display: block;
+}

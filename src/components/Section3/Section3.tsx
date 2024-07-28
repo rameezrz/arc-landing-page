@@ -4,8 +4,8 @@ import "./section3.css";
 
 const Section3 = () => {
   return (
-    <section className="section3 h-[40vh] sm:h-[80vh] w-full mb-[500px]">
-      <div className="imgContainer h-[80%] w-full grid grid-cols-2">
+    <section className="section3 h-full sm:h-[80vh] w-full mb-12">
+      <div className="imgContainer h-[40vh] sm:h-[80%] w-full grid grid-cols-2">
         <div className="flex flex-col col-start-2 justify-center sm:px-24">
           <div className="ml-8 sm:ml-0">
             <p className="font-theme text-primary-gray font-bold sm:text-2xl mb-2 sm:mb-5">

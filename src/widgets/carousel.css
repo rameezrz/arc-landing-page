@@ -1,9 +1,9 @@
-.carousel-container {
+.section1 .carousel-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-.carousel-item {
+.section1 .carousel-item {
   display: flex !important;
   justify-content: center;
   align-items: center;
@@ -14,17 +14,17 @@
   overflow: hidden;
 }
 
-.slick-slide:not(.slick-center) .carousel-item {
+.section1 .slick-slide:not(.slick-center) .carousel-item {
   transform: scale(0.8);
   border: 2px solid rgb(101, 101, 101);
 }
 
-.slick-center .carousel-item {
+.section1 .slick-center .carousel-item {
   transform: scale(1);
   border: 2px solid black;
 }
 
-.carousel-image {
+.section1 .carousel-image {
   width: 100%;
   height: auto;
   object-fit: cover;
