@@ -1,0 +1,10 @@
+.section3 {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.section3 .imgContainer {
+  background-image: url("../../assets/section3/bg.png");
+  background-size: cover;
+  background-position: center;
+}

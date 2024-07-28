@@ -5,7 +5,7 @@ import "./productList.css";
 
 const ProductsList = () => {
   return (
-    <section className="productList mb-48">
+    <section className="productList mb-12">
       <h1 className="font-theme text-center text-2xl md:text-5xl mb-8">
         New Arrivals
       </h1>
