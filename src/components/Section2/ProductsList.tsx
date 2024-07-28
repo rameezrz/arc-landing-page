@@ -5,15 +5,15 @@ import "./productList.css";
 
 const ProductsList = () => {
   return (
-    <section className="productList mb-12">
+    <section className="productList mb-12" id="productList">
       <h1 className="font-theme text-center text-2xl md:text-5xl mb-8 text-primary-gray">
         New Arrivals
       </h1>
-      <div className="grid gap-y-6 grid-cols-4 lg:grid-cols-8 lg:gap-y-0">
+      <div className="grid gap-y-6 gap-x-4 grid-cols-4 lg:grid-cols-8 lg:gap-y-0">
         {productIcons.map((icon, idx) => (
           <div
             key={idx}
-            className="w-20 h-20 border-2 place-self-center border-gray-700 overflow-hidden rounded-lg cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-300"
+            className="md:w-20 md:h-20 border-2 place-self-center border-gray-700 overflow-hidden rounded-lg cursor-pointer hover:scale-110 hover:shadow-xl transition-all duration-300"
           >
             <img src={icon} alt="" className="object-cover" />
           </div>

@@ -76,7 +76,7 @@ const Header = () => {
                 className="relative hover:scale-110 transition-all duration-300 ease-in-out"
               >
                 <a
-                  href="#"
+                  href="#productList"
                   className={`relative${
                     activeLink === link
                       ? "font-bold after:block after:absolute after:bottom-0 after:bg-gray-500 after:h-[3px] after:w-full"
@@ -113,7 +113,7 @@ const Header = () => {
               (link) => (
                 <li key={link} className="my-2">
                   <a
-                    href="#"
+                    href="#productList"
                     className={`block ${
                       activeLink === link ? "font-bold" : ""
                     }`}

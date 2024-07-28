@@ -7,4 +7,5 @@
 html {
   font-family: "Poppins", "Volkhov", "Segoe UI", Tahoma, Geneva, Verdana,
     sans-serif;
+  scroll-behavior: smooth;
 }

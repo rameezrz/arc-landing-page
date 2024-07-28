@@ -1,4 +1,4 @@
-# ARC Frontend
+# ARC Frontend [homepage](https://arc-nine-gamma.vercel.app/)
 
 ![Landing Page](https://ovq37ygrsuppsjg2.public.blob.vercel-storage.com/arc-ui-HRBgH46LUzIKCyIY6ubO92Q064Ea3y)
 This project is a responsive Landing Page for a web application. The header includes a search bar, navigation links, and a profile icon. The hero section features a grid layout with animated elements and a "Shop Now" button. Animations are implemented using Framer Motion to enhance the user experience.
@@ -33,11 +33,11 @@ This project is a responsive Landing Page for a web application. The header incl
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/hero-section.git
+   git clone https://github.com/rameezrz/arc-landing-page
    ```
 2. Navigate to the project directory:
    ```bash
-   cd hero-section
+   cd arc-landing-page
    ```
 3. Install the dependencies:
    ```bash
@@ -50,4 +50,4 @@ This project is a responsive Landing Page for a web application. The header incl
    ```bash
    npm run dev
    ```
-2. Open your browser and go to http://localhost:3000 to see the application in action.
+2. Open your browser and go to http://localhost:5173 to see the application in action.
