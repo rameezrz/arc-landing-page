@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from "react";
 
+interface TimeLeft {
+  days?: number;
+  hours?: number;
+  minutes?: number;
+  seconds?: number;
+}
+
 const Timer: React.FC = () => {
   const calculateTimeLeft = () => {
     const difference = +new Date("2024-08-01") - +new Date();
-    let timeLeft = {};
+    let timeLeft: TimeLeft = {};
 
     if (difference > 0) {
       timeLeft = {
@@ -17,7 +24,7 @@ const Timer: React.FC = () => {
     return timeLeft;
   };
 
-  const [timeLeft, setTimeLeft] = useState(calculateTimeLeft());
+  const [timeLeft, setTimeLeft] = useState<TimeLeft>(calculateTimeLeft());
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -29,15 +36,15 @@ const Timer: React.FC = () => {
 
   const timerComponents: JSX.Element[] = [];
 
-  Object.keys(timeLeft).forEach((interval) => {
-    if (!timeLeft[interval]) {
+  Object.keys(timeLeft).forEach((interval, idx) => {
+    if (!timeLeft[interval as keyof TimeLeft]) {
       return;
     }
 
     timerComponents.push(
-      <div className="text-center">
+      <div className="text-center" key={idx}>
         <div className="bg-white p-4 rounded-lg shadow-md text-3xl font-mono">
-          {timeLeft[interval].toString().padStart(2, "0")}
+          {timeLeft[interval as keyof TimeLeft]?.toString().padStart(2, "0")}
         </div>
         <div className="mt-2 text-gray-500">
           {interval.charAt(0).toUpperCase() + interval.slice(1)}
