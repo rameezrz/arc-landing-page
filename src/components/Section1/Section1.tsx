@@ -4,7 +4,7 @@ import Button from "../Button/Button";
 
 const Section1 = () => {
   return (
-    <section className="grid gap-10 grid-cols-1 md:grid-cols-6 h-full mb-48 w-full bg-[#fafafa] py-8 px-6 md:px-9 lg:px-12">
+    <section className="grid gap-10 grid-cols-1 md:grid-cols-6 h-full mb-12 w-full bg-[#fafafa] py-8 px-6 md:px-9 lg:px-12">
       <div className="flex flex-col md:col-span-2">
         <h1 className="font-theme text-2xl text-center mb-5 text-primary-gray">
           Deals Of The Month

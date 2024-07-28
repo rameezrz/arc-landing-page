@@ -3,9 +3,10 @@ import "./carousel.css";
 import img1 from "../assets/carousel/1.png";
 import img2 from "../assets/carousel/2.png";
 import img3 from "../assets/carousel/3.png";
+import img4 from "../assets/carousel/4.png";
 
 const Carousel = () => {
-  const images = [img1, img2, img3];
+  const images = [img1, img2, img3, img4];
 
   const settings = {
     className: "center",

@@ -36,7 +36,10 @@ const Header = () => {
         <ul className="flex md:gap-6 justify-evenly text-lg ">
           {["Home", "Products", "Cart", "Wishlist", "Notification"].map(
             (link) => (
-              <li key={link} className="relative">
+              <li
+                key={link}
+                className="relative hover:scale-110 transition-all duration-300 ease-in-out"
+              >
                 <a
                   href="#"
                   className={`relative${
