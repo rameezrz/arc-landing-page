@@ -40,6 +40,7 @@ const Section4 = () => {
           initialSlide: 2,
           infinite: true,
           dots: true,
+          autoplay: true,
         },
       },
       {
@@ -48,13 +49,13 @@ const Section4 = () => {
           slidesToShow: 1,
           slidesToScroll: 1,
           infinite: true,
-          dots: true,
+          autoplay: true,
         },
       },
     ],
   };
   return (
-    <section className="section4 h-screen bg-[#fafafa] py-8 px-6 md:px-9 lg:px-12">
+    <section className="section4 h-[80vh] lg:h-screen bg-[#fafafa] py-8 px-6 md:px-9 lg:px-12">
       <div className="flex flex-col justify-center items-center">
         <h1 className="font-theme text-center text-2xl md:text-5xl mb-4 text-primary-gray">
           Follow Us On Instagram

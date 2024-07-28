@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ProductsList from "./components/Section2/ProductsList";
 import Section3 from "./components/Section3/Section3";
 import Section4 from "./components/Section4/Section4";
+import NewsLetter from "./components/NewsLetter/NewsLetter";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
       <div className="-mx-6 md:-mx-9 lg:-mx-12">
         <Section4 />
       </div>
+      <NewsLetter />
     </div>
   );
 };
