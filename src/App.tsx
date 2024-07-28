@@ -7,6 +7,8 @@ import ProductsList from "./components/Section2/ProductsList";
 import Section3 from "./components/Section3/Section3";
 import Section4 from "./components/Section4/Section4";
 import NewsLetter from "./components/NewsLetter/NewsLetter";
+import Footer from "./components/Footer/Footer";
+import { Divider, FloatButton, Tooltip } from "antd";
 
 const App = () => {
   return (
@@ -22,6 +24,16 @@ const App = () => {
         <Section4 />
       </div>
       <NewsLetter />
+      <div className="-mx-6 md:-mx-9 lg:-mx-12">
+        <Divider className="border-[1px]" />
+      </div>
+      <Footer />
+      <Tooltip placement="left" title="back to top">
+        <FloatButton.BackTop
+          visibilityHeight={0}
+          className="scale-125 shadow-xl"
+        />
+      </Tooltip>
     </div>
   );
 };

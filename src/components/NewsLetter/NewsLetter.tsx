@@ -3,11 +3,11 @@ import Button from "../Button/Button";
 
 const NewsLetter = () => {
   return (
-    <div className="grid h-screen grid-cols-1 lg:grid-cols-2">
+    <div className="grid h-[50%] lg:h-screen grid-cols-1 lg:grid-cols-2">
       <div className="flex justify-center h-[70%] lg:h-full">
         <img src={img} alt="" className="" />
       </div>
-      <div className="flex -mt-40 lg:mt-0 flex-col items-center lg:justify-center">
+      <div className="flex flex-col items-center lg:justify-center">
         <h1 className="font-theme text-center text-2xl md:text-4xl mb-4 text-primary-gray">
           Subscribe To Our Newsletter
         </h1>

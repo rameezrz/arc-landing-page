@@ -19,7 +19,9 @@ const Header = () => {
   return (
     <div className="h-20 lg:h-36 place-content-center grid grid-cols-12">
       <div className="logo col-span-8 md:col-span-3 lg:col-span-2 ">
-        <h1 className="font-theme text-3xl lg:text-5xl">ARC</h1>
+        <h1 className="font-theme text-3xl lg:text-5xl cursor-pointer">
+          <a href="#">ARC</a>
+        </h1>
       </div>
       <div className="searchBar hidden lg:grid lg:col-span-4 mr-18">
         <Input

@@ -22,13 +22,31 @@ const Hero = () => {
         </div>
         <div className="item-5 col-span-12 md:col-span-8 row-span-1 bg-cover bg-center rounded-lg bg-gray-300 order-5"></div>
       </div>
-      <div className="flex justify-between ">
+      <div className="flex justify-between md:hidden">
         {logos.map((logo, i) => (
           <img
             src={logo}
             key={i}
             alt=""
-            className="self-center md:w-24 md:h-auto"
+            className="self-center w-20 md:w-24 h-auto"
+          />
+        ))}
+      </div>
+      <div className="hidden md:flex justify-between">
+        {logos.map((logo, i) => (
+          <img
+            src={logo}
+            key={i}
+            alt=""
+            className="self-center w-16 md:w-24 h-auto"
+          />
+        ))}
+        {logos.map((logo, i) => (
+          <img
+            src={logo}
+            key={i + 4}
+            alt=""
+            className="self-center w-16 md:w-24 h-auto"
           />
         ))}
       </div>
