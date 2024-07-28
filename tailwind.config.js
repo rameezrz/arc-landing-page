@@ -5,7 +5,12 @@ export default {
     fontFamily: {
       theme: ["Volkhov"],
     },
-    extend: {},
+    extend: {
+      colors: {
+        "primary-gray": "#484848",
+        "secondary-gray": "#8A8A8A",
+      },
+    },
   },
   plugins: [],
 };

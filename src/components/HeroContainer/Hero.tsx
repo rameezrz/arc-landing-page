@@ -3,6 +3,7 @@ import logoOne from "../../assets/brandsLogo/1.png";
 import logoTwo from "../../assets/brandsLogo/2.png";
 import logoThree from "../../assets/brandsLogo/3.png";
 import logoFour from "../../assets/brandsLogo/4.png";
+import Button from "../Button/Button";
 
 const Hero = () => {
   const logos = [logoOne, logoTwo, logoThree, logoFour];
@@ -16,9 +17,7 @@ const Hero = () => {
           <div className="text-center">
             <h1 className="text-2xl md:text-5xl font-medium">ULTIMATE</h1>
             <h2 className="text-4xl sale md:text-8xl font-bold">SALE</h2>
-            <button className="mt-4 px-4 py-1 md:px-8 md:py-2 bg-black text-white rounded-md md:rounded-xl">
-              SHOP NOW
-            </button>
+            <Button text="SHOP NOW" />
           </div>
         </div>
         <div className="item-5 col-span-12 md:col-span-8 row-span-1 bg-cover bg-center rounded-lg bg-gray-300 order-5"></div>
