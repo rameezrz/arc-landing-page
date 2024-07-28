@@ -3,6 +3,7 @@ import { SearchOutlined, UserOutlined } from "@ant-design/icons";
 import { Input } from "antd";
 import { PiListBold } from "react-icons/pi";
 import { IoClose } from "react-icons/io5";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [activeLink, setActiveLink] = useState("Home");
@@ -16,8 +17,37 @@ const Header = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const headerVariants = {
+    hidden: { opacity: 0, y: -50 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+  };
+
+  const linkVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { duration: 0.3, delay: 0.5 } },
+  };
+
+  const profileVariants = {
+    hidden: { opacity: 0, scale: 0.8 },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      transition: { duration: 0.3, delay: 0.5 },
+    },
+  };
+
+  const menuVariants = {
+    hidden: { opacity: 0, x: "200%" },
+    visible: { opacity: 1, x: 0, transition: { duration: 0.5 } },
+  };
+
   return (
-    <div className="h-20 lg:h-36 place-content-center grid grid-cols-12">
+    <motion.div
+      className="h-20 lg:h-36 place-content-center grid grid-cols-12"
+      initial="hidden"
+      animate="visible"
+      variants={headerVariants}
+    >
       <div className="logo col-span-8 md:col-span-3 lg:col-span-2 ">
         <h1 className="font-theme text-3xl lg:text-5xl cursor-pointer">
           <a href="#">ARC</a>
@@ -34,7 +64,10 @@ const Header = () => {
       <div className="col-span-2 md:hidden grid place-content-end self-center">
         <PiListBold size={24} onClick={toggleMenu} />
       </div>
-      <div className="navLinks hidden md:col-span-6 md:grid lg:col-span-5 self-center">
+      <motion.div
+        className="navLinks hidden md:col-span-6 md:grid lg:col-span-5 self-center"
+        variants={linkVariants}
+      >
         <ul className="flex md:gap-6 justify-evenly text-lg ">
           {["Home", "Products", "Cart", "Wishlist", "Notification"].map(
             (link) => (
@@ -57,12 +90,21 @@ const Header = () => {
             )
           )}
         </ul>
-      </div>
-      <div className="profile col-span-2 md:col-span-3 lg:col-span-1 grid place-content-end self-center ">
+      </motion.div>
+      <motion.div
+        className="profile col-span-2 md:col-span-3 lg:col-span-1 grid place-content-end self-center"
+        variants={profileVariants}
+      >
         <UserOutlined style={{ fontSize: "24px" }} />
-      </div>
+      </motion.div>
       {menuOpen && (
-        <div className="absolute z-20 top-0 left-0 w-screen h-screen bg-gray-100">
+        <motion.div
+          className="absolute z-20 top-0 left-0 w-screen h-screen bg-gray-100"
+          initial="hidden"
+          animate="visible"
+          exit="hidden"
+          variants={menuVariants}
+        >
           <div className="flex justify-end mt-10 mr-10">
             <IoClose size={30} onClick={toggleMenu} />
           </div>
@@ -86,9 +128,9 @@ const Header = () => {
               )
             )}
           </ul>
-        </div>
+        </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 };
 

@@ -1,30 +1,53 @@
-# React + TypeScript + Vite
+# ARC Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![Landing Page](https://ovq37ygrsuppsjg2.public.blob.vercel-storage.com/arc-ui-HRBgH46LUzIKCyIY6ubO92Q064Ea3y)
+This project is a responsive Landing Page for a web application. The header includes a search bar, navigation links, and a profile icon. The hero section features a grid layout with animated elements and a "Shop Now" button. Animations are implemented using Framer Motion to enhance the user experience.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Screenshots](#screenshots)
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**: JavaScript library for building user interfaces.
+- **TypeScript**: Typed superset of JavaScript that compiles to plain JavaScript.
+- **Tailwind CSS**: Utility-first CSS framework for rapid UI development.
+- **Ant Design**: A design system for enterprise-level products. Used for icons and input components.
+- **Framer Motion**: Library for creating animations in React.
+- **React Icons**: Collection of popular icons for React.
 
-- Configure the top-level `parserOptions` property like this:
+## Features
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+- Responsive design using Tailwind CSS.
+- Animated header with a logo, search bar, and navigation links.
+- Toggleable menu for smaller viewports.
+- Hero section with animated grid layout.
+- Brand logos displayed with animations.
+- "Shop Now" button with custom button component.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/hero-section.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd hero-section
+   ```
+3. Install the dependencies:
+   ```bash
+   npm install
+   ```
+
+## Usage
+
+1. Start the development server:
+   ```bash
+   npm run dev
+   ```
+2. Open your browser and go to http://localhost:3000 to see the application in action.
